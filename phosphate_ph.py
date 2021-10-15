@@ -62,12 +62,12 @@ xs = []
 curr = start
 while curr < end:
     print(curr)
-    #a, b = fsolve(equation, (10**-6, 10**-20))
+    # a, b = fsolve(equation, (10**-6, 10**-20))
     a, b = fsolve(equation2, (10**-5, 10**-19))
     print(a, b)
-    # cs.append(curr)
-    # its garbo lol
-    # ima remove those outliers good now
+   # cs.append(curr)
+   # its garbo lol
+   # ima remove those outliers good now
     if(b < 0.08 and a > b):
         cs.append(curr)
         xs.append(-math.log10(a-b))
